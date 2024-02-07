@@ -1,0 +1,65 @@
+﻿@using System.IO;
+@using TPLOCAL1.Models;
+@Html.Partial("Entete")
+@{
+    Layout = null; // Indique que cette page n'utilise pas de layout
+    var file = System.IO.Path.Combine(Environment.CurrentDirectory, "XmlFile", "DataAvis.xml");
+    var listReviews = new ListReviews().GetAvis(file); // Appel de la méthode GetAvis pour récupérer les avis
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des avis</title>
+    <!-- Mettez ici vos liens vers les fichiers CSS ou autres ressources -->
+    <link rel="stylesheet" href="~/resources/Index.css"> <!-- Ajoutez le lien vers votre fichier CSS -->
+    <style>
+  /* Styles pour le tableau */
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+/* Styles pour les cellules */
+th, td {
+    border: 1px solid black; /* Bordure des cellules */
+    padding: 8px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+   
+
+    <!-- Création de la liste des avis -->
+    <section>
+        <table>
+            <tr>
+                <td colspan="3" style="text-align:center;"><strong>Liste des avis</strong></td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Avis donné</th>
+            </tr>
+            @foreach (var review in listReviews)
+            {
+                var couleurFond = review.AvisDonne == "O" ? "green" : "red";
+                var wording = review.AvisDonne == "O" ? "Oui" : "Non";
+        <tr>
+            <td>@review.Name</td>
+            <td>@review.Prenom</td>
+            <td style="background-color:@couleurFond;">@wording</td>
+        </tr>
+            }
+            
+                    
+            
+        </table>
+    </section>
+
+</body>
+</html>
+

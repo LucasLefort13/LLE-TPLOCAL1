@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "B1cboCccALJPAubxA3WxaifDfqPkaqTr9JmE5BLC31k=",
+  "Source": "TPLOCAL1",
+  "BasePath": "_content/TPLOCAL1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TPLOCAL1\\wwwroot",
+      "Source": "TPLOCAL1",
+      "ContentRoot": "C:\\Users\\luche\\Source\\Repos\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\luche\\Source\\Repos\\TPLOCAL1-base\\wwwroot\\resources\\GroupeHN.png",
+      "SourceId": "TPLOCAL1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luche\\Source\\Repos\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "RelativePath": "resources/GroupeHN.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\GroupeHN.png"
+    },
+    {
+      "Identity": "C:\\Users\\luche\\Source\\Repos\\TPLOCAL1-base\\wwwroot\\resources\\Index.css",
+      "SourceId": "TPLOCAL1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luche\\Source\\Repos\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "RelativePath": "resources/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\Index.css"
+    }
+  ]
+}
